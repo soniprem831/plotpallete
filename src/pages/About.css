@@ -1,0 +1,68 @@
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 3rem 1rem;
+  }
+  
+  .about-container {
+    display: flex; /* Arrange children side by side */
+    align-items: center;
+    justify-content: space-between; /* Add space between text and image */
+    max-width: 1200px; /* Limit width of the container */
+    width: 100%;
+    gap: 2rem; /* Add spacing between text and image */
+  }
+  
+  .about-text {
+    flex: 1; /* Allow text to take up available space */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .about-text h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-text p {
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+  
+  .about-image {
+    flex: 1; /* Allow image to take up available space */
+    display: flex;
+    justify-content: center; /* Center image inside its container */
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px; /* Optional: Add rounded corners */
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column; /* Stack text and image vertically on smaller screens */
+      text-align: center; /* Center align content for smaller screens */
+    }
+  
+    .about-text, .about-image {
+      flex: unset;
+      width: 100%; /* Ensure full width on smaller screens */
+    }
+  
+    .about-text p {
+      text-align: justify; /* Justify text for better readability */
+    }
+  
+    .about-image img {
+      max-width: 90%; /* Adjust image size for smaller screens */
+    }
+  }
+  
